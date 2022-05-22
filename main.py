@@ -45,9 +45,9 @@ def clickW(num):
     
 def readimage(x,y,w,h):
     im1 = pyautogui.screenshot(region=(x,y,w,h))
-    im1.save(r"./savedimage.png")
+    im1.save(r"./image.png")
 
-    image = "./savedimage.png"
+    image = "./image.png"
     text = pytesseract.image_to_string(Image.open(image), lang="eng")
     if len(text) > 0:
         text = text[0:-2]
