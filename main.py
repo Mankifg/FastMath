@@ -1,5 +1,5 @@
-from pyautogui import *
-import pyautogui
+from pyautogui import * 
+import pyautogui as pag
 import time
 import keyboard
 import win32api, win32con
@@ -14,7 +14,17 @@ with open("config.txt", "r") as f:
     
 h = inp1
 inp1 = []
-print(h)
+
+print('Go to the top left corner of the inp and press a')
+keyboard.wait('a')
+tl = [ pag.position()[0], pag.position()[1] ]
+print('Go to the bottom right corner of the inp and press a')
+keyboard.wait('a')
+br = [ pag.position()[0], pag.position()[1] ]
+print('config')
+
+
+
 for i,v in enumerate(h):
     inp1.append(v.replace("\n",""))
 
@@ -25,8 +35,7 @@ for i,v in enumerate(inp1):
     xc.append(int(s[0]))
     yc.append(int(s[1]))
     
-print(xc)
-print(yc)   
+ 
 
 def click(x,y):
     win32api.SetCursorPos((x,y))
@@ -44,14 +53,14 @@ def clickW(num):
     clicksingle(10)
     
 def readimage(x,y,w,h):
-    im1 = pyautogui.screenshot(region=(x,y,w,h))
+    im1 = pag.screenshot(region=(x,y,w,h))
     im1.save(r"./image.png")
 
     image = "./image.png"
     text = pytesseract.image_to_string(Image.open(image), lang="eng")
     if len(text) > 0:
         text = text[0:-2]
-        inp = text.replace("x","*")
+        text = text.replace("x","*")
         
     return text
 
@@ -64,14 +73,14 @@ def bfinp(x,y):
 while True:
     if keyboard.press("q"):
         exit()
-    inp = readimage(150,280,1000,75)
+    inp = readimage(tl[0],tl[1],br[0] - tl[1],br[1] - tl[1])
     
     
-    if len(inp) > 1:    
-        if inp[1] == "4":
-            if len(inp) > 2:
-                inp = inp[0] + inp[2:]  
-                
+    if len(inp) > 2:    
+        for i in range(len(inp) - 1):
+            if inp[i]== '4' and inp[i+1] == '+':
+                inp = inp[::i] + inp[i+1:]
+                        
     print(inp, end="")
     
     if "=" not in inp:
@@ -79,8 +88,10 @@ while True:
             rez = eval(inp)
             print(f"| {rez}")
             clickW(rez)
+            time.sleep(0.5)
         except SyntaxError:
             pass
         except NameError:
             pass
+        
     
