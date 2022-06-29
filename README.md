@@ -6,7 +6,9 @@ This is a program that is desinged to calculate fast.
 
 ## Projekt
 
-```git clone https://github.com/Mankifg/calculation```
+```
+git clone https://github.com/Mankifg/calculation
+```
 
 ## Packages
 ```py -m pip install -r requirements.txt```
