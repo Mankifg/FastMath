@@ -76,10 +76,13 @@ while True:
     inp = readimage(tl[0],tl[1],br[0] - tl[1],br[1] - tl[1])
     
     
-    if len(inp) > 2:    
+    if len(inp) > 3:    
         for i in range(len(inp) - 1):
             if inp[i]== '4' and inp[i+1] == '+':
-                inp = inp[::i] + inp[i+1:]
+                try:
+                    inp = inp[::i] + inp[i+1:]
+                except ValueError:
+                    pass
                         
     print(inp, end="")
     
