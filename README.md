@@ -1,5 +1,4 @@
 # Calculation
-
 This is a program that is desinged to calculate fast.
 
 # Download
@@ -8,15 +7,31 @@ This is a program that is desinged to calculate fast.
 
 ```
 git clone https://github.com/Mankifg/calculation
+cd Calculation
 ```
 
 ## Packages
-```py -m pip install -r requirements.txt```
+```
+py -m pip install -r requirements.txt
+```
 for main.py (including image to text)
 
-```py -m pip install -r reqs.txt```
+```
+py -m pip install -r reqs.txt
+```
+
 for help.py (only mouse movement)
 
+# Run
+```
+py main.py
+```
+for auto solver
+and
+```
+py help.py
+```
+for QOL feature.
 
 # How it works
  
