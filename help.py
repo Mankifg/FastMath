@@ -23,7 +23,7 @@ for i,v in enumerate(inp):
     yc.append(int(h[1]))
     
 running = True
-delay = 0.1
+delay = 0.3
 
 while running:
     if pre('0'):
