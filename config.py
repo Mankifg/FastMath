@@ -6,7 +6,7 @@ import win32api, win32con
 
 inp = []
 
-nums = ["0", "1","2","3","4","5","6","7","8","9","enter","delete"]
+nums = ["0", "1","2","3","4","5","6","7","8","9","enter","delete", "top left corner of text apearing on screen","bottom right corner of text apearing on screen"]
 
 for i in range(len(nums)):
     print(f'Press the {nums[i]} button.')

@@ -11,16 +11,8 @@ cd Calculation
 ```
 
 ## Packages
-```
-py -m pip install -r requirements.txt
-```
-for main.py (including image to text)
 
-```
-py -m pip install -r reqs.txt
-```
-
-for help.py (only mouse movement)
+run `py setup.py` for instalation and calibration
 
 # Run
 ```

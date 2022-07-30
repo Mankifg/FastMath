@@ -15,13 +15,9 @@ with open("config.txt", "r") as f:
 h = inp1
 inp1 = []
 
-print('Go to the top left corner of the inp and press a')
-keyboard.wait('a')
-tl = [ pag.position()[0], pag.position()[1] ]
-print('Go to the bottom right corner of the inp and press a')
-keyboard.wait('a')
-br = [ pag.position()[0], pag.position()[1] ]
-print('config')
+
+
+
 
 
 
@@ -34,7 +30,6 @@ for i,v in enumerate(inp1):
     s = v.split(",")
     xc.append(int(s[0]))
     yc.append(int(s[1]))
-    
  
 
 def click(x,y):
@@ -64,12 +59,16 @@ def readimage(x,y,w,h):
         
     return text
 
-def bfinp(x,y):
+
+
+
     
-    click(x,y)
-    click(x,y)
-    click(x,y)
-    
+tl =  xc[12],yc[12]
+
+
+br = xc[13],yc[13]
+
+
 while True:
     if keyboard.press("q"):
         exit()
