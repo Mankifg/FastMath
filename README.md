@@ -3,7 +3,7 @@ This is a program that is desinged to calculate fast.
 
 # Download
 
-## Projekt
+## Project
 
 ```
 git clone https://github.com/Mankifg/calculation
