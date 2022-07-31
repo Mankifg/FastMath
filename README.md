@@ -1,13 +1,12 @@
-# Calculation
+# FastMath
 This is a program that is desinged to calculate fast.
 
 # Download
 
-## Project
-
 ```
-git clone https://github.com/Mankifg/calculation
-cd Calculation
+git clone https://github.com/Mankifg/FastMath.git
+cd FastMath
+py setup.py
 ```
 
 ## Packages
@@ -21,7 +20,7 @@ py main.py
 for auto solver
 and
 ```
-py help.py
+py helper.py
 ```
 for QOL feature.
 
@@ -30,7 +29,7 @@ for QOL feature.
 __main.py__
 First program takes a screenshot of area of interest. And using __pytesseract__ it converts it to text. Then it calculates and type the result.
 
-__help.py__
+__helper.py__
 This program wait for user input and then click on same number
 
 
