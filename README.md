@@ -32,6 +32,9 @@ First program takes a screenshot of area of interest. And using __pytesseract__ 
 __helper.py__
 This program wait for user input and then click on same number
 
+# Issue/ Suggestion
+If you find any issue or you have suggestions please submite it [Here](https://github.com/Mankifg/FastMath/issues) and click __New Issue__.
+
 
 # Disclaimer
 
