@@ -34,6 +34,7 @@ This program wait for user input and then click on same number
 
 # Issue/ Suggestion
 If you find any issue or you have suggestions please submit it [Here](https://github.com/Mankifg/FastMath/issues) and click __New Issue__.
+Feel free to contact me anytime.
 
 
 # Disclaimer
