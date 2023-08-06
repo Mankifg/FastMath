@@ -100,6 +100,8 @@ while True:
                 inp = inp[::i] + inp[i + 1 :]
             except ValueError:
                 pass'''
+    
+#bil sem tle
 
     
     
