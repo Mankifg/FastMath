@@ -1,4 +1,4 @@
 keyboard==0.13.5
 PyAutoGUI==0.9.53
 pywin32==303
-pillow>=10.0.1 # not directly required, pinned by Snyk to avoid a vulnerability
+pillow>=10.3.0 # not directly required, pinned by Snyk to avoid a vulnerability
